@@ -1,0 +1,20 @@
+#menu li{
+    position: relative;
+}
+
+#menu ul li::after{
+    content: "";
+    display: inline-block;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    top: 32px;
+    background-color: #0f172a;
+    position: absolute;
+    opacity: 0;
+    transition: all .5s;
+}
+#menu ul li:hover::after{
+    opacity: 1;
+    width: 104%;
+}
